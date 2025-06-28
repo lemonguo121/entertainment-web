@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LM_SQPlayer - 免费电影音乐小说App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #f9f9f9;
+        }
+
+        header {
+            background: #111;
+            padding: 1.2em;
+            text-align: center;
+        }
+
+        .logo-container {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75em;
+            justify-content: center;
+        }
+
+        .logo-container img {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            /* 圆形头像 */
+            object-fit: cover;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+            border: 2px solid white;
+        }
+
+        .app-title {
+            font-size: 1.8em;
+            font-weight: 600;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            color: white;
+            padding: 4em 1em;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+        }
+
+        .btn {
+            background: #ff6f61;
+            color: white;
+            padding: 0.75em 1.5em;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            text-decoration: none;
+        }
+
+        .section {
+            padding: 2em 1em;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            justify-content: space-around;
+        }
+
+        .feature {
+            flex: 1;
+            min-width: 240px;
+            background: white;
+            padding: 1.5em;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .screenshot-scroll {
+            display: flex;
+            overflow-x: auto;
+            gap: 1em;
+            padding-bottom: 1em;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .screenshot-card {
+            flex: 0 0 auto;
+            scroll-snap-align: center;
+            width: 220px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transform: rotate(0deg);
+            transition: transform 0.3s ease;
+        }
+
+        .screenshot-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        footer {
+            background: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 1em;
+            font-size: 0.9em;
+        }
+
+        @media(max-width: 600px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="App Logo">
+            <span class="app-title">LM_SQPlayer</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>免费看电影 · 听音乐 · 看小说</h1>
+        <p>一个简单好用的多媒体内容聚合 App</p>
+        <a class="btn" href="https://wwym.lanzouq.com/LMPlayer" target="_blank">立即下载</a>
+    </section>
+
+    <section class="section">
+        <h2>🎯 应用功能</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>🎬 免费电影</h3>
+                <p>收录全网热播电影资源，在线播放或缓存下载，永久免费。</p>
+            </div>
+            <div class="feature">
+                <h3>🎵 音乐播放器</h3>
+                <p>聚合各平台热门音乐，支持在线试听与收藏，无广告干扰。</p>
+            </div>
+            <div class="feature">
+                <h3>📖 小说阅读</h3>
+                <p>阅读热门小说，支持离线缓存、夜间模式、自定义字体大小等功能。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>📸 应用截图</h2>
+        <div class="screenshot-scroll">
+            <div class="screenshot-card"><img src="home.jpg" alt="截图1"></div>
+            <div class="screenshot-card tilt"><img src="music.jpg" alt="截图2"></div>
+            <div class="screenshot-card"><img src="novel.jpg" alt="截图3"></div>
+            <div class="screenshot-card tilt-left"><img src="videoplayer.jpg" alt="截图4"></div>
+            <div class="screenshot-card"><img src="music_player.jpg" alt="截图5"></div>
+            <div class="screenshot-card tilt"><img src="novelreader.jpg" alt="截图6"></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>⬇️ 下载方式</h2>
+        <p>App 未上架商店，点击下方链接即可直接下载 APK 文件。</p>
+        <ul>
+            <li>🔗 <a href="https://wwym.lanzouq.com/LMPlayer" target="_blank">蓝奏云下载地址</a></li>
+            <li>📢 Telegram 群：<a href="@lemontvtvbox" target="_blank">@lemontvtvbox</a>（获取更新、反馈建议）
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 LM_SQPlayer. 本站仅做介绍，资源来自网络。</p>
+    </footer>
+
+</body>
+
+</html>
